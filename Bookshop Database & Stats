@@ -1,0 +1,22 @@
+--Create a bookshop database
+
+CREATE TABLE bookshop (id INTEGER PRIMARY KEY,name TEXT, quantity INTEGER, rating INTEGER, aisle INTEGER);
+INSERT INTO bookshop VALUES (1, "Bible", 6, 10, 2);
+INSERT INTO bookshop VALUES (2, "The half-blood Prince", 3,7,5);
+INSERT INTO bookshop VALUES (3, "Wild Mist", 12, 8, 3);
+INSERT INTO bookshop VALUES (4, "Baby Be Mine", 1, 4, 6);
+INSERT INTO bookshop VALUES (5, "Chorus of Ashes", 17, 6, 4);
+INSERT INTO bookshop VALUES (6, "Sphere Song", 13,9,3);
+INSERT INTO bookshop VALUES (7, "Wild Hearts", 5, 8, 2);
+INSERT INTO bookshop VALUES (8, "The Song of Achilles", 2, 7, 5);
+INSERT INTO bookshop VALUES (9, "The Fellowship of the Ring", 6, 1, 10);
+INSERT INTO bookshop VALUES (10, "The Hobbit", 20, 3, 6);
+INSERT INTO bookshop VALUES (11, "The Handmaid's Tale", 5, 6, 7);
+INSERT INTO bookshop VALUES (12, "All About Love", 6,8,10);
+INSERT INTO bookshop VALUES (13, "Regretting You", 4, 4, 12);
+INSERT INTO bookshop VALUES (14, "The Vow", 3,6, 4);
+INSERT INTO bookshop VALUES (15, "The Fine Print", 4, 6, 2);
+
+--Show how many books the bookshop has in stock
+SELECT SUM(quantity) FROM bookshop;
+SELECT * FROM bookshop;
